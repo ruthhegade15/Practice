@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,49 +15,93 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <header>
-        <div class=" flex fixed-full justify-between  bg-indigo-600 shadow-xl">
+        <div class=" flex fixed-full justify-between  bg-gradient-to-b from-indigo-800 to-blue-500">
             <div class="flex px-8 py-6 items-center ">
-            <div class=""> <img  class="h-8 rounded "
-                src="./images/house.png" alt=""> 
+                <div class=""> <img class="h-8 rounded " src="./images/house.png" alt="">
+                </div>
+                <h1 class="px-2 font-bold text-xl text-white">HOUSING <span class="text-sm">.COM</span></h1>
             </div>
-            <h1 class="px-2 font-bold text-xl text-white">HOUSING <span class="text-sm">.COM</span></h1>
-            </div>
-            <div class="flex items-center mr-10  ">
-            <div class="flex text-white font-bold items-center px-4">
-                <div class="text-white pr-2 text-lg"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                <div>Download App</div>
-            </div>
-            <div class="flex items-center">
-            <div class="flex bg-white h-10 w-40 py-3 rounded items-center">
-                <div class="text-blue-800 pl-2">List Property</div>
-                <div class="ml-2 bg-red-600 text-white w-12 text-center">Free</div>
-            </div>
-            <div class="flex items-center text-white font-bold px-6">
-                <div class="text-white pr-2 text-lg"><i class="fa-solid fa-heart-circle-check"></i></div>
-                <div>Saved</div>
-            </div>
-            <div class="text-white font-bold pr-2 px-1  ">News</div>
-            </div>
+            <div class="flex items-center  mr-10  ">
+                <div class="flex text-white font-bold items-center px-4">
+                    <div class="text-white pr-2 text-lg hidden md:block"><i
+                            class="fa-solid fa-mobile-screen-button"></i></div>
+                    <div class="hidden md:block">Download App</div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex items-center">
+                        <div class="flex bg-white h-10 w-40 py-3 rounded items-center">
+                            <div class="text-blue-800 pl-2">List Property</div>
+                            <div class="ml-2 bg-red-600 text-white w-12 text-center">Free</div>
+                        </div>
+                        <div class="flex  items-center text-white font-bold px-6">
+                            <div class="text-white pr-2 text-lg"><i class="fa-solid fa-heart-circle-check"></i></div>
+                            <div>Saved</div>
+                        </div>
+                        <div class="text-white font-bold pr-2 px-1">News</div>
 
-            <div class=" flex items-center bg-white h-12 w-28 rounded-3xl  justify-center">
-                <div><i class="fa-solid fa-bars text-2xl pr-6"></i></div>
-                <div><i class="fa-regular fa-id-badge text-blue-800 text-2xl"></i></div>
-            </div>
-            </div>
-        </div>
-        <div class="bg-indigo-500 shadow-inner shadow-lg">
-            <div class="text-center">
-                <div class="pt-20 pb-8 text-4xl font-bold text-white ">Commerical Property for Sale & Rent in Pune  <br><text-2xl  class="text-2xl text-white bg-indigo-400 px-4  rounded shadow-inner shadow-2xl py-2 w-56">Yahan Search Khatam Karo</span></div>
-                <div> 
-                    <div>
-                        
                     </div>
                 </div>
-            </div>
 
+                <div class=" flex items-center bg-white h-12 w-28 rounded-3xl  justify-center">
+                    <div><i class="fa-solid fa-bars text-2xl pr-6"></i></div>
+                    <div><i class="fa-regular fa-id-badge text-blue-800 text-2xl"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="relative ">
+            <div class="mix-blend-overlay"> <img class="w-full h-full object-cover absolute mix-blend-overlay "
+                    src="https://c.housingcdn.com/demand/s/common/assets/commercialCover.bbc26753.jpg" alt="">
+                <div class="text-center">
+                    <div class="pt-20 pb-8 text-5xl font-sans text-white  ">Commerical Property for Sale & Rent in Pune
+                    </div>
+                    <div class="flex justify-center">
+                        <div
+                            class=" flex items-center justify-center text-white font-bold bg-indigo-500 h-12 w-80 mt-8 text-xl ">
+                            Yahan Search Khatam Karo</div>
+                    </div>
+
+                </div>
+                <div class="overflow-hidden object-cover w-full">
+                    <div
+                        class=" md:w-full md:max-w-6xl md:h-40 mx-40 my-10 w-full overflow-hidden bg-opacity-70 bg-black ">
+
+                        <div class="flex md:gap-x-16 text-indigo-200 text-xl uppercase mt-6 md:ml-16  ">
+                            <div class="hidden md:block">Buy</div>
+                            <div class="hidden md:block">Rent</div>
+                            <div class="relative px-8 lg:px-0 ">Commercial
+                                <div
+                                    class=" absolute right-0 bottom-6  bg-red-500 text-center text-white text-sm rounded-xl w-12 ">
+                                    New</div>
+                            </div>
+                            <div class="hidden md:block">PG/CO-living</div>
+                            <div class="hidden md:block">Plots</div>
+                        </div>
+
+                        <div class="mt-8 mx-8 bg-white h-10  ">
+                            <div class="bg-white w-auto  absolute grid grid-cols-5  ">
+                                <button><i class="fa-solid fa-angle-down text-xl hover:text-blue-800 text-gray-700 pl-40 pt-3 pr-2 outline-none Focus:outline-none border-r border-gray-400"></i></button>
+                                <div class="px-4 text-xl mt-3  bg-black bg-opacity-70 absolute right-8 top-2 rounded md:left-8 md:top-12 md:w-[250%] md:bg-black md:bg-opacity-70">
+                                    <ul class="md:flex gap-x-6 mt-2 lg:mt-0 space-y-2 md:space-x-2 itmes-center pb-3 ">
+                                        <li><a href="#" class="flex px-4 py-2 text-lg text-black rounded hover:bg-blue-500 bg-blue-700 md:mt-2">Pune</a> </li>
+                                        <li><a href="#" class="flex px-4 py-2 text-lg text-black hover:bg-blue-500 bg-blue-700 rounded">Kolhapur</a> </li>
+                                        <li><a href="#" class="flex px-4 py-2 text-lg text-black hover:bg-blue-500 bg-blue-700 rounded">Sangli</a> </li>
+                                        <li><a href="#" class="flex px-4 py-2 text-lg text-black hover:bg-blue-500 bg-blue-700 rounded">Karad</a> </li>
+                                    </ul>
+                                </div>
+                                <div class="text-xl colspan-3 flex items-center border-r border-gray-400 "><input type="search" name="search" class="text-gray-600 outline-none" placeholder="Search Locality"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         </div>
     </header>
 </body>
+
 </html>
