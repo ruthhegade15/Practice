@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <div class=" flex fixed-full justify-between  bg-gradient-to-b from-indigo-800 to-blue-500">
+        <div class=" flex fixed w-full justify-between  bg-gradient-to-b from-indigo-800 to-blue-500">
             <div class="flex px-8 py-6 items-center ">
                 <div class=""> <img class="h-8 rounded " src="./images/house.png" alt="">
                 </div>
@@ -52,10 +52,10 @@
             </div>
         </div>
         <div class="relative ">
-            <div class="mix-blend-overlay"> <img class="w-full h-full object-cover absolute mix-blend-overlay "
+            <div class="mix-blend-overlay h-full"> <img class="w-full h-full object-cover absolute mix-blend-overlay "
                     src="https://c.housingcdn.com/demand/s/common/assets/commercialCover.bbc26753.jpg" alt="">
                 <div class="text-center">
-                    <div class="pt-20 pb-8 text-5xl font-sans text-white  ">Commerical Property for Sale & Rent in Pune
+                    <div class="pt-20 pb-8 text-5xl font-sans text-white">Commerical Property for Sale & Rent in Pune
                     </div>
                     <div class="flex justify-center">
                         <div
@@ -81,9 +81,9 @@
                         </div>
 
                         <div class="mt-8 mx-8 bg-white h-10  ">
-                            <div class="bg-white w-auto  absolute grid grid-cols-5  ">
+                            <div class="bg-white w-  absolute grid grid-cols-6  ">
                                 <button><i class="fa-solid fa-angle-down text-xl hover:text-blue-800 text-gray-700 pl-40 pt-3 pr-2 outline-none Focus:outline-none border-r border-gray-400"></i></button>
-                                <div class="px-4 text-xl mt-3  bg-black bg-opacity-70 absolute right-8 top-2 rounded md:left-8 md:top-12 md:w-[250%] md:bg-black md:bg-opacity-70">
+                                <div class="px-4 text-xl mt-3  bg-black bg-opacity-70 absolute right-8 top-2 rounded md:left-8 md:top-12 md:w-[41%] md:bg-black md:bg-opacity-70">
                                     <ul class="md:flex gap-x-6 mt-2 lg:mt-0 space-y-2 md:space-x-2 itmes-center pb-3 ">
                                         <li><a href="#" class="flex px-4 py-2 text-lg text-black rounded hover:bg-blue-500 bg-blue-700 md:mt-2">Pune</a> </li>
                                         <li><a href="#" class="flex px-4 py-2 text-lg text-black hover:bg-blue-500 bg-blue-700 rounded">Kolhapur</a> </li>
@@ -91,17 +91,56 @@
                                         <li><a href="#" class="flex px-4 py-2 text-lg text-black hover:bg-blue-500 bg-blue-700 rounded">Karad</a> </li>
                                     </ul>
                                 </div>
-                                <div class="text-xl colspan-3 flex items-center border-r border-gray-400 "><input type="search" name="search" class="text-gray-600 outline-none" placeholder="Search Locality"></div>
+                                <div class="text-xl col-span-3  flex items-center border-r border-gray-400 "><input type="search" name="search" class="text-gray-600 outline-none px-2 " placeholder="Search Locality"></div>
+                                <div class="flex justify-center gap-x-5 items-center border-r border-gray-400 text-lg font-medium">
+                                    <label for="radio" class="flex gap-x-2  ">
+                                        <input type="radio">
+                                        <h1>Buy</h1>
+                                    </label>
+                                    <label for="radio" class="flex gap-x-2 ">
+                                        <input type="radio">
+                                        <h1>Lease</h1>
+                                    </label>
+                                </div>
+                                
+                                <div class=" bg-green-500 px-3 flex w-auto items-center"> <i class="fa-solid fa-magnifying-glass" ></i> 
+                                <label for="search " class="outline-none text-lg"></label> <input type="search"  class="bg-green-500 text-black-800 w-36 outline-none " placeholder="Search" > 
+                                </div>
+                                
                             </div>
                             
                         </div>
                     </div>
                 </div>
-
+                <div class="z-[1000] bottom-6">
+                <div class="bg-black rounded max-w-6xl mx-36 mt-8 h-36 flex justify-between relative">
+                    <div class=" absolute left-16 bottom-32 mb-1 bg-red-500 text-center text-white text-sm rounded-xl w-12 ">
+                        New</div>
+                    <div class="mx-16 my-8 text-xl">
+                    <div class="text-white font-bold">
+                        <h1>Properties with Great Returns</h1>
+                    </div>
+                    <div class="text-white mt-3 flex gap-x-5"><h1>Looking for properties with high ROI? Explore now!</h1>
+                        <img src="https://c.housingcdn.com/demand/s/common/assets/arrow-v2.a180f026.png" alt="" >
+                    </div>
+                    </div>
+                    <img src="https://c.housingcdn.com/demand/s/common/assets/commercial-image-desktop.f096fdc1.png" alt="" class="">
+                </div>
+                </div>
             </div>
+            
         </div>
         </div>
     </header>
+    <main>
+        <div class="mt-20 mx-36 "> 
+            <h1 class="text-2xl font-medium">Recently Added Properties</h1>
+            <div>
+                
+            </div>
+
+        </div>
+    </main>
 </body>
 
 </html>
