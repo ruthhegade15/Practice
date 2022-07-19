@@ -17,8 +17,8 @@
 </head>
 
 <body>
-    <header>
-        <div class=" flex fixed w-full justify-between  bg-gradient-to-b from-indigo-800 to-blue-500">
+    <header class="overflow-hidden">
+        <div class=" flex fixed w-full justify-between  bg-gradient-to-b from-indigo-800 to-blue-500 z-56">
             <div class="flex px-8 py-6 items-center ">
                 <div class=""> <img class="h-8 rounded " src="./images/house.png" alt="">
                 </div>
@@ -55,18 +55,18 @@
             <div class="mix-blend-overlay h-full"> <img class="w-full h-full object-cover absolute mix-blend-overlay "
                     src="https://c.housingcdn.com/demand/s/common/assets/commercialCover.bbc26753.jpg" alt="">
                 <div class="text-center">
-                    <div class="pt-20 pb-8 text-5xl font-sans text-white">Commerical Property for Sale & Rent in Pune
+                    <div class="pt-20 pb-8 md:text-5xl text-2xl font-sans text-white">Commerical Property for Sale & Rent in Pune
                     </div>
                     <div class="flex justify-center">
                         <div
-                            class=" flex items-center justify-center text-white font-bold bg-indigo-500 h-12 w-80 mt-8 text-xl ">
+                            class=" flex items-center justify-center text-white md:font-bold bg-indigo-500 h-12 md:w-80 mt-8 md:text-xl text-lg ">
                             Yahan Search Khatam Karo</div>
                     </div>
 
                 </div>
                 <div class="overflow-hidden object-cover w-full">
                     <div
-                        class=" md:w-full md:max-w-6xl md:h-40 mx-40 my-10 w-full overflow-hidden bg-opacity-70 bg-black ">
+                        class=" md:w-full md:max-w-6xl md:h-40 lg:mx-40 my-10 w-full overflow-hidden bg-opacity-70 bg-black ">
 
                         <div class="flex md:gap-x-16 text-indigo-200 text-xl uppercase mt-6 md:ml-16  ">
                             <div class="hidden md:block">Buy</div>
@@ -80,67 +80,301 @@
                             <div class="hidden md:block">Plots</div>
                         </div>
 
-                        <div class="mt-8 mx-8 bg-white h-10  ">
-                            <div class="bg-white w-  absolute grid grid-cols-6  ">
-                                <button><i class="fa-solid fa-angle-down text-xl hover:text-blue-800 text-gray-700 pl-40 pt-3 pr-2 outline-none Focus:outline-none border-r border-gray-400"></i></button>
-                                <div class="px-4 text-xl mt-3  bg-black bg-opacity-70 absolute right-8 top-2 rounded md:left-8 md:top-12 md:w-[41%] md:bg-black md:bg-opacity-70">
+                        <div class="md:mt-8 md:mx-8 bg-white h-10  object-cover ">
+                            <div class="bg-white w-auto absolute grid grid-cols-6  ">
+                                <button onclick="myFunction()"><i
+                                        class="fa-solid fa-angle-down text-xl hover:text-blue-800 text-gray-700 md:pl-40 md:pt-3 md:pr-2 outline-none Focus:outline-none border-r border-gray-400"></i></button>
+
+                                <div class="px-4 text-xl mt-3  bg-black bg-opacity-70 absolute md:right-8 md:top-8 top-4 rounded md:left-8 md:top-12 md:w-[41%] md:bg-black md:bg-opacity-70"
+                                    id="id1" style="visibility:hidden;">
+                                    <script>
+                                        let toggleME = false
+                                        function myFunction() {
+                                            if (toggleME) {
+                                                document.getElementById('id1').style.visibility = 'hidden'
+                                                toggleME = false;
+                                            } else {
+                                                document.getElementById('id1').style.visibility = 'visible'
+                                                toggleME = true;
+                                            }
+
+                                        }
+                                    </script>
                                     <ul class="md:flex gap-x-6 mt-2 lg:mt-0 space-y-2 md:space-x-2 itmes-center pb-3 ">
-                                        <li><a href="#" class="flex px-4 py-2 text-lg text-black rounded hover:bg-blue-500 bg-blue-700 md:mt-2">Pune</a> </li>
-                                        <li><a href="#" class="flex px-4 py-2 text-lg text-black hover:bg-blue-500 bg-blue-700 rounded">Kolhapur</a> </li>
-                                        <li><a href="#" class="flex px-4 py-2 text-lg text-black hover:bg-blue-500 bg-blue-700 rounded">Sangli</a> </li>
-                                        <li><a href="#" class="flex px-4 py-2 text-lg text-black hover:bg-blue-500 bg-blue-700 rounded">Karad</a> </li>
+                                        <li><a href="#"
+                                                class="flex px-4 py-2 text-lg text-black rounded hover:bg-blue-500 bg-blue-700 md:mt-2">Pune</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="flex px-4 py-2 text-lg text-black hover:bg-blue-500 bg-blue-700 rounded">Kolhapur</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="flex px-4 py-2 text-lg text-black hover:bg-blue-500 bg-blue-700 rounded">Sangli</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="flex px-4 py-2 text-lg text-black hover:bg-blue-500 bg-blue-700 rounded">Karad</a>
+                                        </li>
                                     </ul>
                                 </div>
-                                <div class="text-xl col-span-3  flex items-center border-r border-gray-400 "><input type="search" name="search" class="text-gray-600 outline-none px-2 " placeholder="Search Locality"></div>
-                                <div class="flex justify-center gap-x-5 items-center border-r border-gray-400 text-lg font-medium">
-                                    <label for="radio" class="flex gap-x-2  ">
+                                <div class="lg:text-xl col-span-3   flex items-center border-r border-gray-400 "><input
+                                        type="search" name="search" class="text-gray-600 outline-none px-2 "
+                                        placeholder="Search Locality"></div>
+                                <div class="flex justify-center gap-x-5 items-center border-r border-gray-400 md:text-lg font-medium">
+                                    <label for="radio" class="flex md:gap-x-2  ">
                                         <input type="radio">
                                         <h1>Buy</h1>
                                     </label>
-                                    <label for="radio" class="flex gap-x-2 ">
+                                    <label for="radio" class="flex md:gap-x-2 ">
                                         <input type="radio">
                                         <h1>Lease</h1>
                                     </label>
                                 </div>
-                                
-                                <div class=" bg-green-500 px-3 flex w-auto items-center"> <i class="fa-solid fa-magnifying-glass" ></i> 
-                                <label for="search " class="outline-none text-lg"></label> <input type="search"  class="bg-green-500 text-black-800 w-36 outline-none " placeholder="Search" > 
+
+                                <div class=" bg-green-500 px-3 flex w-auto items-center"> <i
+                                        class="fa-solid fa-magnifying-glass"></i>
+                                    <label for="search " class="outline-none text-lg"></label> <input type="search"
+                                        class="bg-green-500 text-black-800 w-36 outline-none " placeholder="Search">
                                 </div>
-                                
+
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
-                <div class="z-[1000] bottom-6">
-                <div class="bg-black rounded max-w-6xl mx-36 mt-8 h-36 flex justify-between relative">
-                    <div class=" absolute left-16 bottom-32 mb-1 bg-red-500 text-center text-white text-sm rounded-xl w-12 ">
-                        New</div>
-                    <div class="mx-16 my-8 text-xl">
-                    <div class="text-white font-bold">
-                        <h1>Properties with Great Returns</h1>
+                <div class="z-20 relative top-16">
+                    <div class="bg-black rounded md:max-w-6xl md:mx-36 md:mt-8 h-36 flex justify-between relative">
+                        <div
+                            class=" absolute left-16 bottom-32 mb-1 bg-red-500 text-center text-white text-sm rounded-xl w-12 ">
+                            New</div>
+                        <div class="md:mx-16 mx-2 my-8 md:text-xl text-sm">
+                            <div class="text-white font-bold">
+                                <h1 class="">Properties with Great Returns</h1>
+                            </div>
+                            <div class="text-white mt-3 flex gap-x-5">
+                                <h1 class="">Looking for properties with high ROI? Explore now!</h1>
+                                <img src="https://c.housingcdn.com/demand/s/common/assets/arrow-v2.a180f026.png"
+                                    class="hidden md:block" alt="">
+                            </div>
+                        </div>
+                        <img src="https://c.housingcdn.com/demand/s/common/assets/commercial-image-desktop.f096fdc1.png"
+                            alt="" class="">
                     </div>
-                    <div class="text-white mt-3 flex gap-x-5"><h1>Looking for properties with high ROI? Explore now!</h1>
-                        <img src="https://c.housingcdn.com/demand/s/common/assets/arrow-v2.a180f026.png" alt="" >
-                    </div>
-                    </div>
-                    <img src="https://c.housingcdn.com/demand/s/common/assets/commercial-image-desktop.f096fdc1.png" alt="" class="">
                 </div>
-                </div>
-            </div>
-            
-        </div>
-        </div>
-    </header>
-    <main>
-        <div class="mt-20 mx-36 "> 
-            <h1 class="text-2xl font-medium">Recently Added Properties</h1>
-            <div>
-                
             </div>
 
         </div>
+        </div>
+    </header>
+    <main class="overflow-hidden">
+        <div class="md:mt-20 xl:mx-36 lg:mx-24 mt-20 mx-16">
+            <h1 class="md:text-3xl text-xl font-medium">Recently Added Properties <span class="font-bold">for Sale</span></h1>
+            <div class="mt-10 flex space-x-5 flex-wrap w-full lg:flex-nowrap">
+                <div class="flex w-96 border-2 border-gray-400 rounded shadow-2xl my-5 ">
+                    <img src="https://is1-2.housingcdn.com/354cef8f/313fbf2ae56581462759adf7d9266d28/v0/medium.jpg.webp"
+                        alt="" class="object-cover w-32 h-40">
+                    <div class="ml-3 mt-2"> <span class="text-xl font-bold">Ready to use Office Spa...</span> <br>
+                        <span class="text-gray-500 text-sm">by Mithani Estate</span>
+                        <div class="mt-2 text-black font-medium">370 sq.ft <br>
+                            <span class="text-gray-500 text-sm">Mhada Colony, Viman Nagar, Pune</span>
+                        </div>
+                        <div class="mt-3"> <i class="fa-solid fa-indian-rupee-sign"></i> <span
+                                class=" font-bold text-lg">65.0 L</span> </div>
+                    </div>
+
+                </div>
+                <div class="flex w-96 border-2 border-gray-400 rounded shadow-2xl my-5">
+                    <img src="https://is1-3.housingcdn.com/354cef8f/08e110ee2f0e314fba50968d16807a27/v0/medium.jpg.webp"
+                        alt="" class="object-cover w-32 h-40">
+                    <div class="ml-3 mt-2"> <span class="text-xl font-bold">Ready to use Office Spa..</span> <br>
+                        <span class="text-gray-500 text-sm">by Mithani Estate</span>
+                        <div class="mt-2 text-black font-medium">309 sq.ft <br>
+                            <span class="text-gray-500 text-sm">Mhada Colony, Viman Nagar, Pune</span>
+                        </div>
+                        <div class="mt-3"> <i class="fa-solid fa-indian-rupee-sign"></i> <span
+                                class=" font-bold text-lg">55.0 L</span> </div>
+                    </div>
+
+                </div>
+                <div class="flex w-96 border-2 border-gray-400 rounded shadow-2xl my-5">
+                    <img src="https://is1-2.housingcdn.com/354cef8f/4d214be6371e4b102084f3058611339b/v0/medium.jpg.webp"
+                        alt="" class="object-cover w-32 h-40">
+                    <div class="ml-3 mt-2"> <span class="text-xl font-bold">Shop</span> <br>
+                        <span class="text-gray-500 text-sm">by Sanjay Singh</span>
+                        <div class="mt-2 text-black font-medium">723 sq.ft <br>
+                            <span class="text-gray-500 text-sm">Mahalunge, Pune</span>
+                        </div>
+                        <div class="mt-3"> <i class="fa-solid fa-indian-rupee-sign"></i> <span
+                                class=" font-bold text-lg">2.1 Cr</span> </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="md:mt-20 xl:mx-36 lg:mx-24 mt-8 mx-16">
+            <h1 class="md:text-3xl text-2xl font-medium">Recently Added Properties <span class="font-bold">for Rent</span></h1>
+            <div class="mt-10 flex space-x-5 flex-wrap w-full lg:flex-nowrap">
+                <div class="flex md:w-96  border-2 border-gray-400 rounded shadow-2xl my-5">
+                    <img src="https://is1-3.housingcdn.com/354cef8f/136148435b28e714601a15525193fecb/v0/medium.jpg.webp"
+                        alt="" class="object-cover w-32 h-40">
+                    <div class="ml-3 mt-2"> <span class="text-xl font-bold">Ready to use Office Spa...</span> <br>
+                        <span class="text-gray-500 text-sm">by Vinod Rathod</span>
+                        <div class="mt-2 text-black font-medium">700 sq.ft <br>
+                            <span class="text-gray-500 text-sm"></span>Rakshak Nagar, Kharadi, Pune
+                        </div>
+                        <div class="mt-3"> <i class="fa-solid fa-indian-rupee-sign"></i> <span
+                                class=" font-bold text-lg">55,000</span> </div>
+                    </div>
+
+                </div>
+                <div class="flex w-96 border-2 border-gray-400 rounded shadow-2xl my-5">
+                    <img src="https://is1-3.housingcdn.com/354cef8f/136148435b28e714601a15525193fecb/v0/medium.jpg.webp"
+                        alt="" class="object-cover w-32 h-40">
+                    <div class="ml-3 mt-2"> <span class="text-xl font-bold">Ready to use Office Spa..</span> <br>
+                        <span class="text-gray-500 text-sm">by Vinod Rathod</span>
+                        <div class="mt-2 text-black font-medium">700 sq.ft <br>
+                            <span class="text-gray-500 text-sm">Rakshak Nagar, Kharadi, Pune</span>
+                        </div>
+                        <div class="mt-3"> <i class="fa-solid fa-indian-rupee-sign"></i> <span
+                                class=" font-bold text-lg">50,000 L</span> </div>
+                    </div>
+
+                </div>
+                <div class="flex w-96 border-2 border-gray-400 rounded shadow-2xl my-5">
+                    <img src="https://is1-2.housingcdn.com/354cef8f/0c57f98ee81b841dabde8557f41f4dd8/v0/medium.jpg.webp"
+                        alt="" class="object-cover w-32 h-40">
+                    <div class="ml-3 mt-2"> <span class="text-xl font-bold">Shop</span> <br>
+                        <span class="text-gray-500 text-sm">by Nitansha Neha</span>
+                        <div class="mt-2 text-black font-medium">240 sq.ft <br>
+                            <span class="text-gray-500 text-sm">MIDC, Chinchwad, Pune</span>
+                        </div>
+                        <div class="mt-3"> <i class="fa-solid fa-indian-rupee-sign"></i> <span
+                                class=" font-bold text-lg">14,500</span> </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="md:mt-20 md:mx-36 mt-8 mx-16 w-auto">
+            <h1 class="md:text-3xl text-2xl font-medium">News & <span class="font-bold">Articles</span> <br> <span
+                    class="text-gray-500 text-lg">Read what's happening in Real Estate</span></h1>
+            <div class="mt-10 flex space-x-8 flex-wrap w-full h-full lg:flex-nowrap">
+                <div class="my-5">
+                <div class="border-b-2 pb-5 ">
+                    <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/07/11152009/First-time-home-buyers-find-out-why-Pune-is-worth-the-investment-FB-1200x700-compressed.jpg"
+                        alt="" class="rounded shadow-xl">
+                    <div class="mt-2 text-lg font-bold px-1 ">First-time home buyers, find out why Pune is worth the
+                        investment</div>
+                    <div class="text-sm text-gray-500 mt-3">We look at what makes Pune a ripe, buyer-friendly market,
+                        for those looking to invest in their first dream home</div>
+                </div>
+                <div class="flex text-sm justify-between text-gray-500 mt-1">
+                    <div>Housing News Desk</div>
+                    <div>Jul 2022</div>
+                </div>
+                </div>
+                <div class="my-5">
+                <div class="border-b-2 pb-5">
+                    <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/07/08144922/Office-market-leasing-in-H1-2022-witnesses-65.jpg"
+                        alt="" class="rounded shadow-xl">
+                    <div class="mt-2 text-lg font-bold px-1 ">Office market leasing in H1 2022 witnesses 65% </div>
+                    <div class="text-sm text-gray-500 mt-3">Office markets in the seven key cities of India, recorded total leasing of approximately 27.2 million sq ft </div>
+                </div>
+                <div class="flex text-sm justify-between text-gray-500 mt-1">
+                    <div>Housing News Desk</div>
+                    <div>Jul 2022</div>
+                </div>
+                </div>
+                <div class="my-5">
+                <div class="border-b-2 pb-5">
+                    <img src="https://assets-news.housing.com/news/wp-content/uploads/2020/03/30095707/Bigha-All-about-land-area-measurement-unit-FB-1200x700-compressed.jpg"
+                        alt="" class="rounded shadow-xl">
+                    <div class="mt-2 text-lg font-bold px-1 ">Bigha: All about land area measurement unit</div>
+                    <div class="text-sm text-gray-500 mt-3">A commonly used land area measurement unit, bigha is popularly used across northern India. </div>
+                </div>
+                <div class="flex text-sm justify-between text-gray-500  mt-1">
+                    <div>Sunita Mishra</div>
+                    <div>Jul 2022</div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-center mt-10">
+            <div class="md:text-5xl text-2xl font-medium">Part of</div>
+            <div><img src="https://c.housingcdn.com/demand/s/common/assets/REAGroup.4743f11f.png" alt="" class="md:h-16 h-10"></div>
+        </div>
     </main>
+    <footer class="overflow-hidden">
+        <div class="bg-gray-800 border-t-2 border-white mt-8  md:flex justify-between " >
+            <div class="md:ml-20 pb-16 ml-5">
+            <div class="mt-16 flex items-center justify-center">
+                <div class=""> <img class="h-10 rounded " src="./images/house.png" alt="">
+                </div>
+                <h1 class="px-2 font-bold text-3xl text-white">HOUSING <span class="text-sm">.COM</span></h1>
+            </div>
+            <div class="flex items-center gap-x-10 mt-10 justify-center">
+                <div><img src="https://c.housingcdn.com/demand/s/common/assets/gptweconomic.5d37564c.jpg" alt="" class="h-20"></div>
+                <div><img src="https://c.housingcdn.com/demand/s/common/assets/gptwLogo.10074374.png" alt="" class="h-20"></div>
+            </div>
+            <div>
+                <h1 class="text-gray-300 mt-4 text-xl  tracking-3 text-center">FOLLOW</h1>
+                <div class="flex items-center gap-x-8 text-4xl mt-3 text-gray-600 justify-center">
+                    <div><i class="fa-brands fa-facebook-square"></i></div>
+                    <div><i class="fa-brands fa-instagram-square"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                    <div><i class="fa-brands fa-linkedin"></i></div>
+                    <div><i class="fa-brands fa-youtube"></i></div>
+                </div>
+                <div class="text-gray-500 mt-8 text-center text-lg">© 2012-22 Locon Solutions Pvt. Ltd</div>
+            </div>
+            </div>
+            <div class="flex justify-center gap-x-8">
+            <div class="mt-16">
+                <div><h1 class="text-white font-medium">COMPANY</h1></div>
+                <div class="text-gray-500 font-medium leading-8 "><h1 class="hover:text-white">Careers</h1>
+                <h1 class="hover:text-white">About Us</h1>
+                <h1 class="hover:text-white">For Partners</h1>
+                <h1 class="hover:text-white">Terms</h1>
+                <h1 class="hover:text-white">Pricacy Policy</h1>
+                <h1 class="hover:text-white">Contact Us</h1>
+                <h1 class="hover:text-white">Unsubscribe</h1>
+                <h1 class="hover:text-white">Merger Hearing Advertisment</h1>
+                </div>
+            </div>
+            <div class="mt-16">
+                <div><h1 class="text-white font-medium">PARTNER SITES</h1></div>
+                <div class="text-gray-500 font-medium leading-8 "><h1 class="hover:text-white">Proptiger</h1>
+                <h1 class="hover:text-white">Makaan</h1>
+                <h1 class="hover:text-white">IREF</h1>
+                <h1 class="hover:text-white">realestate.com.au</h1>
+                <h1 class="hover:text-white">realtor.com</h1>
+                <h1 class="hover:text-white">99.co</h1>
+                </div>
+            </div>
+            <div class="mt-16">
+                <div><h1 class="text-white font-medium">EXPLORE</h1></div>
+                <div class="text-gray-500 font-medium leading-8 "><h1 class="hover:text-white">News</h1>
+                <h1 class="hover:text-white">Homeloans</h1>
+                <h1 class="hover:text-white">Sitemap</h1>
+                <h1 class="hover:text-white">International</h1>
+                </div>
+            </div>
+            </div>
+            <div class="mt-16 pb-16">
+                <div> 
+                    <h1 class="text-white text-sm font-medium text-center">EXPERIENCE HOUSING APP ON MOBILE</h1>
+                    <div class="flex gap-x-10 mt-4 mr-3 items-center justify-center  ">
+                        <div><img src="https://c.housingcdn.com/demand/s/common/assets/app-store.29706cde.png" class="h-16" alt=""></div>
+                        <div><img src="https://c.housingcdn.com/demand/s/common/assets/google-play.b94036af.png" class="h-16" alt=""></div>
+                    </div>
+                    <div class="flex gap-x-12 mt-12 items-center justify-center">
+                        <div><img src="https://c.housingcdn.com/demand/s/common/assets/qr-code.da92c2f2.png" class="h-36" alt=""></div>
+                        <h1 class="text-gray-600 font-medium text-xl">Open camera <br> & scan the QR <br> code to Download <br> the App</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
