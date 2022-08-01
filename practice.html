@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+        {
+            var a = 100;
+            var b = "100";
+            if (a === b) {
+                document.write("Ruth");
+            }
+        }
+        {
+            var age = 22;
+            if (age >= 18 && age <= 21) {
+                console.log("Yes,your are eligible");
+            }
+        }
+        {
+            var a = 10;
+            var b = 15;
+            if (a >= 12 || b <= 14) {
+                console.log("Yes,your are eligible");
+            }
+        }
+        {
+            var a = 30;
+            var b = 15;
+            if (!a >= 12) {
+                console.log("Yes,your are eligible");
+            }
+        }
+        {
+            var x = 27;
+            if (x > 30) {
+                document.write("X is greater");
+
+            } else {
+                document.write("X is smaller");
+            }
+        }
+        {
+
+            var x = "50";
+            if (x === 60) {
+                document.write(" <br> X is same");
+            } else {
+                document.write(" <br> X is not same");
+            }
+        }
+        {
+            var name = "Ruth";
+            var gender = "male";
+            if (gender == "Female") {
+                document.write("<br> Hello Miss." + name);
+            } else {
+                document.write("<br> Hello Mr.XYZ");
+            }
+        }
+        {
+            var time = 21;
+            if (time < 10) {
+                document.write("<br> Good morning");
+            } else if (time < 20) {
+                document.write("<br> Good afternoon");
+            } else {
+                document.write("<br> Good evening");
+            }
+        }
+        {
+            var per = prompt("Enter your percentage here : ");
+            if (per >= 80 && per <= 100) {
+                alert(" You are in Merit");
+            } else if (per >= 60 && per < 80) {
+                alert(" You are in 1st division");
+            } else if (per >= 45 && per < 60) {
+                alert(" You are in 2nd division");
+            } else if (per >= 33 && per < 45) {
+                alert(" You are in 3rd division");
+            } else if (per < 33) {
+                alert("  You are Fail");
+            } else {
+                alert(" Please enter your valid percentage");
+            }
+        }
+        {
+            var a = 100;
+            var b;
+            b = "Value is" + (a == 100 ? b = "True" : "False");
+            document.write(b);
+        }
+        {
+            var day = 6;
+
+            switch (day) {
+                case 0:
+                    document.write("<br> <br> Today is Monday");
+
+                    break;
+                case 1:
+                    document.write("<br> <br> Today is Tuesday");
+
+                    break;
+                case 2:
+                    document.write("<br> <br> Today is Wednesday");
+
+                    break;
+                case 3:
+                    document.write("<br> <br> Today is Thursday");
+                    break;
+                case 4:
+                    document.write("<br> <br> Today is Friday");
+
+                    break;
+                case 5:
+                    document.write("<br> <br> Today is Saturday");
+
+                    break;
+                case 6:
+                    document.write("<br> <br> Today is Sunday");
+                    break;
+
+                default:
+                    document.write(" <br> <br>Enter the valid Day")
+            }
+        }
+        {
+            var age = 45;
+
+            switch (true) {
+                case (age >= 15 && age <= 20):
+                    document.write("<br> <br> You are Eligible");
+                    break;
+                case (age >= 21 && age <= 30):
+                    document.write("<br> <br> You are not Eligible");
+                    break;
+
+                default:
+                    document.write(" <br> <br> Enter the Valid Age.");
+            }
+        }
+        {
+            var a = 99;
+            switch (true) {
+                case (a == 100 && a > 80):
+                    document.write("<br> <br> You are in merit list 1st");
+                    break;
+                case (a <= 80 && a > 50):
+                    document.write("<br> <br> You are in merit list 2st");
+                    break;
+                case (a <= 50 && a > 30):
+                    document.write("<br> <br> You are in Average list");
+                    break;
+                case (a < 30):
+                    document.write("<br> <br> You are not in the merit list");
+                    break;
+
+                default:
+                    document.write("<br> <br> Please enter your valid ID of the merit list");
+            }
+        }
+        // {
+        //     var a = confirm("Do you like our Website ?");
+
+        //     if(a){
+        //         alert("thanks");
+        //     }else{
+        //         alert("Sorry we can't load the page");
+        //     }
+        // }
+        {
+            // var a = prompt("What is your name ?");
+            // alert(a);
+        }
+        {
+            function hello(){
+                document.write(" <br> <br> <br> Hello Everybody");
+            }
+            function yahoo(){
+                document.write(" <br> <br> <br> This is yahoo");
+            }
+
+            yahoo();
+            hello();
+
+        }
+    </script>
+</body>
+
+</html>
